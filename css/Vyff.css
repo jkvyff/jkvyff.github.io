@@ -515,6 +515,12 @@ nav li.active:after {
 	padding: 0.5vw 1vw;
 }
 
+@media (max-width: 650px) {
+	.box .title {
+		font-size: 2.1em;
+	}
+}
+
 .articles .box .title {
 	background: #B87DBC;
 }
