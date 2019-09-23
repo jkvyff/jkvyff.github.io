@@ -49,6 +49,7 @@ header {
 	padding: 35px 0 0 0;
 	position: relative;
 	text-align: center;
+	background: transparent;
 }
 header li {
 	display: inline;
