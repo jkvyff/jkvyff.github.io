@@ -249,6 +249,7 @@ nav li.active:after {
 	font-size: 8vw;
 	padding-top: 0px;
 	margin-bottom: 100px;
+	left: 15vw;
 	width: 100vw;
 }
 
