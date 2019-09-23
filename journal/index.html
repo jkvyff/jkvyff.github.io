@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vyff | Journal</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Jens Kristian Vyff">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Personal portfolio of things that I do">
+		<meta name="robots" content="noindex">
+		<link rel="stylesheet" type="text/css" href="../css/Vyff.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="journal">
+		<header>
+			<div class="container">
+				<div id="logo">
+					<a class="site-logo transition-link" href="/">
+						<span class="logo-text">JK</span>
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="/">Design</a></li>
+						<li class="active">Journal</li>
+						<li><a href="/lab/">Lab</a></li>
+						<li><a href="/About/">About</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section>
+			<div class="content">
+				<div class="heading">Thoughts</div>
+				<div class="buffer"></div>
+			</div>
+			<div class="container">
+				<section class="journal-gallery">
+					<ul class="articles group">
+						<li class="box">
+							<a href="https://dev.to/jkvyff/keeping-code-working-as-a-web-dev-1j0a">
+								<span class="preview">
+									<img src="https://thepracticaldev.s3.amazonaws.com/i/at47s2e857stpo0akahf.png">
+								</span>
+								<span class="title">Reduce Exposure to What You Can't Control... When You Can</span>
+								<a class="source" href="https://dev.to/jkvyff">
+  									<img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Jens K Vyff's DEV Profile" height="40" width="40">
+								</a>
+							</a>
+						</li>
+						<li class="box">
+							<a href="https://medium.com/better-programming/objects-order-in-javascript-faed6b35de0e?source=friends_link&sk=da884e2d38cc5caef7200c851fe48f7d">
+								<span class="preview">
+									<img src="https://miro.medium.com/max/2880/1*8Q2RwLldV2Zqd1ldvlRZIg.png">
+								</span>
+								<span class="title">Object Order in JavaScript</span>
+								<a class="source" href="https://medium.com/@kristianvyff">
+  									<img src="../images/monogram.svg" alt="Jens K Vyff's Medium Profile" height="40" width="40">
+								</a>
+							</a>
+						</li>
+						<li class="box">
+							<a href="https://dev.to/jkvyff/ruby-code-golf-tips-to-squash-character-counts-4bda">
+								<span class="preview">
+									<img src="https://thepracticaldev.s3.amazonaws.com/i/j2e1bl1mo57bmdsiac45.png">
+								</span>
+								<span class="title">Ruby Code Golf: Tips to Squash Character Counts</span>
+								<a class="source" href="https://dev.to/jkvyff">
+  									<img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Jens K Vyff's DEV Profile" height="40" width="40">
+								</a>
+							</a>
+						</li>
+						<li class="box">
+							<a href="https://medium.com/@kristianvyff/new-or-unique-formats-for-serving-web-images-and-when-to-use-them-48fbd1926251?source=friends_link&sk=95798bce23ac5351f01305841aa6c3ea">
+								<span class="preview">
+									<img src="https://miro.medium.com/max/3840/1*jRL7O1b0Pjv9DOk6p9hdpw.png">
+								</span>
+								<span class="title">New or unique formats for web images</span>
+								<a class="source" href="https://medium.com/@kristianvyff">
+  									<img src="../images/monogram.svg" alt="Jens K Vyff's Medium Profile" height="40" width="40">
+								</a>
+							</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="outro">
+					<h2>If you like my work,  
+						<a href="mailto:jens@vyff.com">drop me a line.</a>
+					</h2>
+				</div>
+				<div class="bloop">
+					<p>Made with <span class="heart">&hearts;</span>, enjoy</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script>
+		let heading = document.querySelector(".heading");
+		window.addEventListener("scroll", function() {
+			let scrollPos = window.pageYOffset || document.documentElement.scrollTop || 0
+			scrollPos < 170 ? heading.style.opacity = (1 - (scrollPos / 200)) : 0.15;
+		})
+	</script>
+</html>

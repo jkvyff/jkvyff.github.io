@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vyff | About</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Jens Kristian Vyff">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Personal portfolio of things that I do">
+		<meta name="robots" content="noindex">
+		<link rel="stylesheet" type="text/css" href="../css/Vyff.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="about">
+		<header>
+			<div class="container">
+				<div id="logo">
+					<a class="site-logo transition-link" href="/">
+						<span class="logo-text">JK</span>
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="/">Design</a></li>
+						<li><a href="/journal/">Journal</a></li>
+						<li><a href="/lab/">Lab</a></li>
+						<li class="active">About</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="heading">
+					<ul class="acronym hidden">
+						<li>About&nbsp;&nbsp;</li>
+						<li>J</li>
+						<li class="squish">en</li>
+						<li class="squish">s</li>
+						<li class="keep">K</li>
+						<li class="squish">ristia</li>
+						<li class="squish">n</li>
+						<li class="keep">V</li>
+						<li class="squish">yff</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<section class="description">
+					<p>
+						Heya, i'm Jens. I like problems and ideas of how to solve them.
+					</p>
+					<p>
+						Unabashedly, I love to create designs that communicate with and delight people and build systems that allow people not to have to worry about the minutia.
+					</p>
+					<p>
+						My passions combine an eye for design with my growing technical ability to realize those in the world. I've been known to sling Javascript/React, Ruby, C/C++, Processing, and SQL.
+					</p>
+					<p>
+						Always excited for a challenge, and currently looking for a full time role.
+					</p>
+					<p>
+						Not yet crushed by overwhelming feedback, so if you have some, let me know. 
+					</p>
+					<p>
+						<a href="https://twitter.com/JKVyff" >
+							<img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" alt="Twitter Icon" height="30px" width="30px">
+						</a>
+					</p>
+				</section>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="outro">
+					<h2>If you like my work,  
+						<a href="mailto:jens@vyff.com">drop me a line.</a>
+					</h2>
+				</div>
+				<div class="bloop">
+					<p>Made with <span class="heart">&hearts;</span>, enjoy</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script>
+		let acronym = document.querySelector(".acronym");
+		window.addEventListener("scroll", function() {
+			let scrollPos = window.pageYOffset || document.documentElement.scrollTop || 0;
+			if (scrollPos >= 1) {
+				acronym.classList.remove("hidden");
+			} else {
+				acronym.classList.add("hidden");
+    		}
+		});
+	</script>
+</html>
