@@ -518,7 +518,7 @@ nav li.active:after {
 
 @media (max-width: 650px) {
 	.box .title {
-		font-size: 2.1em;
+		font-size: 1.7em;
 	}
 }
 
