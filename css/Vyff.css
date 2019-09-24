@@ -342,6 +342,10 @@ nav li.active:after {
 	padding-left: 0.5em;
 }
 
+.acronym li.split {
+	padding-left: 0.5em;
+}
+
 .acronym.hidden li.squish {
 	opacity: 0;
 	max-width: 0;
