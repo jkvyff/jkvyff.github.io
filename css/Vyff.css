@@ -143,6 +143,7 @@ header:before {
 @media (max-width: 950px) {
 	#logo {
 		padding-left: 36vw;
+		padding-bottom: 10px;
 	}
 }
 
@@ -309,7 +310,7 @@ nav li.active:after {
 
 @media (max-width: 950px) {
 	.about .heading {
-		margin: 0px;
+		display: none;
 	}
 
 	.acronym {
