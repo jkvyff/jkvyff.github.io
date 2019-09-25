@@ -244,7 +244,7 @@ nav li.active:after {
 	height: 4dvw;
 	position: relative;
 	padding-top: 12px;
-	margin-bottom: 30px;
+	margin-bottom: 85px;
 	background: 0;
 }
 
@@ -252,8 +252,6 @@ nav li.active:after {
 	height: 4vw;
 	position: fixed;
 	font-size: 50px;
-	padding-top: 0px;
-	margin-bottom: 50px;
 	width: 100vw;
 }
 
@@ -278,10 +276,7 @@ nav li.active:after {
 		padding-top: 18px;
 		text-align: center;
 	}
-	
-	.about .heading {
-		padding: 0px;
-	}
+
 
 	.about .description p {
 		max-width: 80vw;
