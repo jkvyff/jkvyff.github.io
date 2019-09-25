@@ -253,6 +253,7 @@ nav li.active:after {
 	position: fixed;
 	font-size: 50px;
 	width: 100vw;
+	background: 0;
 }
 
 .about .heading {
