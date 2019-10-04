@@ -89,7 +89,7 @@ header:before {
 .journal header:before {
 	background: linear-gradient(20deg,#000 0,#CC3BCB 33%,#63FF8F 66%,#000 100%);
 }
-.lab header:before {
+.project header:before {
 	background: linear-gradient(20deg,#000 0,#FF5B58 33%,#63FFE3 66%,#000 100%);
 }
 .about header:before {
@@ -225,7 +225,7 @@ nav ul li.active:after {
 .journal nav ul li.active:after {
 	background: #da0a7a;
 }
-.lab nav ul li.active:after {
+.project nav ul li.active:after {
 	background: #00bfff;
 }
 .about nav ul li.active:after {
