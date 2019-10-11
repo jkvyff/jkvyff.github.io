@@ -142,7 +142,7 @@ header:before {
 }
 @media (max-width: 950px) {
 	#logo {
-		padding-left: 36vw;
+		padding-left: 34vw;
 		padding-bottom: 10px;
 	}
 }
