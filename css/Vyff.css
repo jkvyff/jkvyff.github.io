@@ -57,7 +57,7 @@ header {
 }
 header li {
 	display: inline;
-	margin-right: 30px;
+	margin-right: 25px;
 }
 @media (min-width: 650px){
 header li {
@@ -242,7 +242,7 @@ nav li.active:after {
 }}
 
 .buffer {
-	height: 4dvw;
+	height: 4vw;
 	position: relative;
 	padding-top: 12px;
 	margin-bottom: 85px;
@@ -566,7 +566,7 @@ footer .container{
 
 @media (max-width: 650px) {
 	footer .container{
-		padding-top: 25px;
+		padding-top: 20px;
 	}
 }
 
@@ -598,7 +598,7 @@ footer .container a:hover{
 
 .outro a{
 	display: inline-block;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .outro a:hover{
