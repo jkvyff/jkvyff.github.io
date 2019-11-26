@@ -483,14 +483,18 @@ nav li.active:after {
 }
 
 .articles .box:nth-of-type(3) {
-	box-shadow: 8px 8px 0px #69FA91
+	box-shadow: 8px 8px 0px #9DB6AB
 }
 
 .articles .box:nth-of-type(4) {
-	box-shadow: 8px 8px 0px #4EC56F
+	box-shadow: 8px 8px 0px #69FA91
 }
 
 .articles .box:nth-of-type(5) {
+	box-shadow: 8px 8px 0px #4EC56F
+}
+
+.articles .box:nth-of-type(6) {
 	box-shadow: 8px 8px 0px #1F502D
 }
 
