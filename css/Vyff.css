@@ -97,6 +97,7 @@ header:before {
 }
 #logo {
 	position: block;
+
 }
 
 #logo a {
@@ -143,9 +144,10 @@ header:before {
 	}
 }
 
-@media (max-width: 950px) {
+@media (max-width: 650px) {
 	#logo {
-		padding-left: 37vw;
+		margin: auto;
+		width: 50%;
 	}
 }
 
