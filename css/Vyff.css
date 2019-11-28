@@ -95,16 +95,15 @@ header:before {
 .about header:before {
 	background: linear-gradient(20deg,#000 0,#CC6779 33%,#E4FF6D 66%,#000 100%);
 }
+
 #logo {
 	position: block;
-
 }
 
 #logo a {
 	width: 80px;
 	height: 80px;
 	display: block;
-	overflow: visible;
 	transform: rotate(0deg);
 	transition: transform 0.4s ease-in-out;
 	border: 5px solid #494c4e;
@@ -129,11 +128,18 @@ header:before {
 #logo a .logo-text:hover {
 	transform: translate(-50%,-50%) rotate(-90deg);
 }
-@media (max-width: 650px){
+@media (max-width: 950px) {
 	#logo {
-		padding-left: 34vw;
 		padding-bottom: 10px;
 	}
+	#logo a {
+		width: 80px;
+		height: 80px;
+  		margin: auto;
+	}
+}
+
+@media (max-width: 650px){
 	#logo a {
 		width: 60px;
 		height: 60px;
@@ -141,13 +147,6 @@ header:before {
 	}
 	#logo a .logo-text {
 		font-size: 18px;
-	}
-}
-
-@media (max-width: 650px) {
-	#logo {
-		margin: auto;
-		width: 50%;
 	}
 }
 
