@@ -511,6 +511,10 @@ nav li.active:after {
 }
 
 .projects .box:nth-of-type(4) {
+	box-shadow: 8px 8px 0px #42A694
+}
+
+.projects .box:nth-of-type(5) {
 	box-shadow: 8px 8px 0px #163630
 }
 
