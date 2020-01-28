@@ -474,12 +474,13 @@ nav li.active:after {
 	border: 5px solid rgba(255, 255, 255, 0.25);
 }
 
+
 .articles .box:nth-of-type(1) {
 	box-shadow: 8px 8px 0px #922C92
 }
 
 .articles .box:nth-of-type(2) {
-	box-shadow: 8px 8px 0px #B87DBC
+	box-shadow: 8px 8px 0px #BF6AC1
 }
 
 .articles .box:nth-of-type(3) {
@@ -487,16 +488,21 @@ nav li.active:after {
 }
 
 .articles .box:nth-of-type(4) {
-	box-shadow: 8px 8px 0px #69FA91
+	box-shadow: 8px 8px 0px #89D3A0
 }
 
 .articles .box:nth-of-type(5) {
-	box-shadow: 8px 8px 0px #4EC56F
+	box-shadow: 8px 8px 0px #69FA91
 }
 
 .articles .box:nth-of-type(6) {
+	box-shadow: 8px 8px 0px #4EC56F
+}
+
+.articles .box:nth-of-type(7) {
 	box-shadow: 8px 8px 0px #1F502D
 }
+
 
 .projects .box:nth-of-type(1) {
 	box-shadow: 8px 8px 0px #953635
