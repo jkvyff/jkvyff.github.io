@@ -545,18 +545,22 @@ nav ul li.active:after {
 }
 
 .projects .box:nth-of-type(2) {
-  box-shadow: 8px 8px 0px #e97e74;
+  box-shadow: 8px 8px 0px #ca594e;
 }
 
 .projects .box:nth-of-type(3) {
-  box-shadow: 8px 8px 0px #76f2d8;
+  box-shadow: 8px 8px 0px #e97e74;
 }
 
 .projects .box:nth-of-type(4) {
-  box-shadow: 8px 8px 0px #42a694;
+  box-shadow: 8px 8px 0px #76f2d8;
 }
 
 .projects .box:nth-of-type(5) {
+  box-shadow: 8px 8px 0px #42a694;
+}
+
+.projects .box:nth-of-type(6) {
   box-shadow: 8px 8px 0px #163630;
 }
 
