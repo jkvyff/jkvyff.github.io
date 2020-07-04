@@ -324,7 +324,7 @@
   </body>
   <script>
     let heading = document.querySelector(".heading");
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
       let scrollPos =
         window.pageYOffset || document.documentElement.scrollTop || 0;
       scrollPos < 170 ? (heading.style.opacity = 1 - scrollPos / 200) : 0.15;
