@@ -511,57 +511,88 @@ nav ul li.active:after {
 .box .border:hover {
   border: 5px solid rgba(255, 255, 255, 0.25);
 }
+/* 
+.journal header:before {
+  background: linear-gradient(
+    20deg,
+    #000 0,
+    #cc3bcb 33%,
+    #63ff8f 66%,
+    #000 100%
+  );
+}
+.project header:before {
+  background: linear-gradient(
+    20deg,
+    #000 0,
+    #ff5b58 33%,
+    #63ffe3 66%,
+    #000 100%
+  );
+} */
 
 .articles .box:nth-of-type(1) {
-  box-shadow: 8px 8px 0px #922c92;
+  box-shadow: 8px 8px 0px #441343;
 }
 
 .articles .box:nth-of-type(2) {
-  box-shadow: 8px 8px 0px #bf6ac1;
+  box-shadow: 8px 8px 0px #882787;
 }
 
 .articles .box:nth-of-type(3) {
-  box-shadow: 8px 8px 0px #9db6ab;
+  box-shadow: 8px 8px 0px #cc3bcb;
 }
 
 .articles .box:nth-of-type(4) {
-  box-shadow: 8px 8px 0px #89d3a0;
+  box-shadow: 8px 8px 0px #a97cb7;
 }
 
 .articles .box:nth-of-type(5) {
-  box-shadow: 8px 8px 0px #69fa91;
+  box-shadow: 8px 8px 0px #86bda3;
 }
 
 .articles .box:nth-of-type(6) {
-  box-shadow: 8px 8px 0px #4ec56f;
+  box-shadow: 8px 8px 0px #63ff8f;
 }
 
 .articles .box:nth-of-type(7) {
-  box-shadow: 8px 8px 0px #1f502d;
+  box-shadow: 8px 8px 0px #42aa5f;
+}
+
+.articles .box:nth-of-type(8) {
+  box-shadow: 8px 8px 0px #21552f;
 }
 
 .projects .box:nth-of-type(1) {
-  box-shadow: 8px 8px 0px #953635;
+  box-shadow: 8px 8px 0px #551e1d;
 }
 
 .projects .box:nth-of-type(2) {
-  box-shadow: 8px 8px 0px #ca594e;
+  box-shadow: 8px 8px 0px #aa3c3a;
 }
 
 .projects .box:nth-of-type(3) {
-  box-shadow: 8px 8px 0px #e97e74;
+  box-shadow: 8px 8px 0px #ff5b58;
 }
 
 .projects .box:nth-of-type(4) {
-  box-shadow: 8px 8px 0px #76f2d8;
+  box-shadow: 8px 8px 0px #cb9186;
 }
 
 .projects .box:nth-of-type(5) {
-  box-shadow: 8px 8px 0px #42a694;
+  box-shadow: 8px 8px 0px #97c8b4;
 }
 
 .projects .box:nth-of-type(6) {
-  box-shadow: 8px 8px 0px #163630;
+  box-shadow: 8px 8px 0px #63ffe3;
+}
+
+.projects .box:nth-of-type(7) {
+  box-shadow: 8px 8px 0px #42aa97;
+}
+
+.projects .box:nth-of-type(8) {
+  box-shadow: 8px 8px 0px #21554b;
 }
 
 .box a img {
