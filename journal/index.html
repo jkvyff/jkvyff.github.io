@@ -114,7 +114,7 @@
           <ul>
             <li><a href="/">Design</a></li>
             <li class="active">Journal</li>
-            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/projects/">projects</a></li>
             <li><a href="/about/">About</a></li>
           </ul>
         </nav>
@@ -327,6 +327,46 @@
       </div>
     </footer>
   </body>
+  <script>
+    // Generate stepped article colors along the header gradient
+    (function () {
+      var articleBoxes = document.querySelectorAll('.articles .box');
+      if (!articleBoxes.length) return;
+
+      var gradientStops = [
+        { pos: 0.0, color: '#000000' },
+        { pos: 0.33, color: '#cc3bcb' },
+        { pos: 0.66, color: '#63ff8f' },
+        { pos: 1.0, color: '#000000' }
+      ];
+
+      var trim = 0.15;
+      var startT = trim;
+      var endT = 1 - trim;
+      var count = articleBoxes.length;
+
+      function findSegment(t) {
+        for (var i = 0; i < gradientStops.length - 1; i++) {
+          var a = gradientStops[i];
+          var b = gradientStops[i + 1];
+          if (t >= a.pos && t <= b.pos) return { a: a, b: b };
+        }
+        // Clamp as fallback
+        return { a: gradientStops[0], b: gradientStops[1] };
+      }
+
+      for (var i = 0; i < count; i++) {
+        var u = count === 1 ? 0.5 : i / (count - 1);
+        var t = startT + u * (endT - startT);
+        var seg = findSegment(t);
+        var localP = (t - seg.a.pos) / (seg.b.pos - seg.a.pos);
+        var pctA = Math.round((1 - localP) * 100);
+        var pctB = 100 - pctA;
+        var mix = 'color-mix(in oklab, ' + seg.a.color + ' ' + pctA + '%, ' + seg.b.color + ' ' + pctB + '%)';
+        articleBoxes[i].style.setProperty('--article-accent', mix);
+      }
+    })();
+  </script>
   <script>
     let heading = document.querySelector(".heading");
     window.addEventListener("scroll", function () {

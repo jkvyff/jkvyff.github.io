@@ -129,7 +129,30 @@
         <section class="project-gallery">
           <ul class="projects group">
             <li class="box">
-              <a href="https://jkv-dev-portfolio.herokuapp.com/" target="_blank">
+              <a href="https://www.vyff.com/atlas-of-public-stocks" target="_blank">
+                <span class="preview">
+                  <picture>
+                    <img src="../images/Atlas-Of-Public-Stocks.png" />
+                  </picture>
+                  <span class="border">&nbsp;</span>
+                </span>
+                <span class="title">Atlas of Public Stocks</span>
+                <a
+                  class="source"
+                  href="https://github.com/jkvyff/atlas-of-public-stocks"
+                  target="_blank"
+                >
+                  <img
+                    src="../images/Github-Icon.svg"
+                    alt="Jens K Vyff's Github project"
+                    height="40"
+                    width="40"
+                  />
+                </a>
+              </a>
+            </li>
+            <li class="box">
+              <a href="https://github.com/jkvyff/dev-portfolio" target="_blank">
                 <span class="preview">
                   <picture>
                     <source
@@ -325,7 +348,7 @@
             </li>
             <li class="box">
               <a
-                href="https://powerful-sea-92342.herokuapp.com/"
+                href="https://github.com/jkvyff/www-game"
                 target="_blank"
               >
                 <span class="preview">
@@ -375,6 +398,46 @@
       </div>
     </footer>
   </body>
+  <script>
+    // Generate stepped project colors along the header gradient
+    (function () {
+      var projectBoxes = document.querySelectorAll('.projects .box');
+      if (!projectBoxes.length) return;
+
+      var gradientStops = [
+        { pos: 0.0, color: '#000000' },
+        { pos: 0.33, color: '#ff5b58' },
+        { pos: 0.66, color: '#63ffe3' },
+        { pos: 1.0, color: '#000000' }
+      ];
+
+      var trim = 0.15;
+      var startT = trim;
+      var endT = 1 - trim;
+      var count = projectBoxes.length;
+
+      function findSegment(t) {
+        for (var i = 0; i < gradientStops.length - 1; i++) {
+          var a = gradientStops[i];
+          var b = gradientStops[i + 1];
+          if (t >= a.pos && t <= b.pos) return { a: a, b: b };
+        }
+        // Clamp as fallback
+        return { a: gradientStops[0], b: gradientStops[1] };
+      }
+
+      for (var i = 0; i < count; i++) {
+        var u = count === 1 ? 0.5 : i / (count - 1);
+        var t = startT + u * (endT - startT);
+        var seg = findSegment(t);
+        var localP = (t - seg.a.pos) / (seg.b.pos - seg.a.pos);
+        var pctA = Math.round((1 - localP) * 100);
+        var pctB = 100 - pctA;
+        var mix = 'color-mix(in oklab, ' + seg.a.color + ' ' + pctA + '%, ' + seg.b.color + ' ' + pctB + '%)';
+        projectBoxes[i].style.setProperty('--project-accent', mix);
+      }
+    })();
+  </script>
   <script>
     let heading = document.querySelector(".heading");
     window.addEventListener("scroll", function () {
